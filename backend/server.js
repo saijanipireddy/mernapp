@@ -4,12 +4,13 @@ import { connectDB } from './config/db.js'
 import foodRouter from './routes/foodRoute.js'
 import { addFood } from './controllers/foodController.js'
 import userRouter from './routes/userRoute.js'
+import 'dotenv/config'
 import cartRouter from './routes/cartRoute.js'
 
 //app config 
 
 const app = express()
-const port = 4000
+const port = process.env.PORT || 4000
 
 // middleware 
 
