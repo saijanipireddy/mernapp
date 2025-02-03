@@ -27,9 +27,6 @@ app.use(express.json())
 connectDB();
 
 
-app.get('/', (req,res) => {
-    res.send('API IS WORKING FINE')
-})
 
 
 //api endpoints 
